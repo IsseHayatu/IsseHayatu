@@ -1,0 +1,591 @@
+{
+  "rows": 90,
+  "dates": [
+    "2010-06-04",
+    "2020-11-05"
+  ],
+  "positives": 60,
+  "class_counts": {
+    "0": 30,
+    "1": 60
+  },
+  "sites": [
+    {
+      "LaunchSite": "CCAFS SLC 40",
+      "count": 55,
+      "sum": 33,
+      "mean": 0.6
+    },
+    {
+      "LaunchSite": "KSC LC 39A",
+      "count": 22,
+      "sum": 17,
+      "mean": 0.7727272727272727
+    },
+    {
+      "LaunchSite": "VAFB SLC 4E",
+      "count": 13,
+      "sum": 10,
+      "mean": 0.7692307692307693
+    }
+  ],
+  "orbits": [
+    {
+      "Orbit": "ES-L1",
+      "count": 1,
+      "sum": 1,
+      "mean": 1.0
+    },
+    {
+      "Orbit": "GEO",
+      "count": 1,
+      "sum": 1,
+      "mean": 1.0
+    },
+    {
+      "Orbit": "GTO",
+      "count": 27,
+      "sum": 14,
+      "mean": 0.5185185185185185
+    },
+    {
+      "Orbit": "HEO",
+      "count": 1,
+      "sum": 1,
+      "mean": 1.0
+    },
+    {
+      "Orbit": "ISS",
+      "count": 21,
+      "sum": 13,
+      "mean": 0.6190476190476191
+    },
+    {
+      "Orbit": "LEO",
+      "count": 7,
+      "sum": 5,
+      "mean": 0.7142857142857143
+    },
+    {
+      "Orbit": "MEO",
+      "count": 3,
+      "sum": 2,
+      "mean": 0.6666666666666666
+    },
+    {
+      "Orbit": "PO",
+      "count": 9,
+      "sum": 6,
+      "mean": 0.6666666666666666
+    },
+    {
+      "Orbit": "SO",
+      "count": 1,
+      "sum": 0,
+      "mean": 0.0
+    },
+    {
+      "Orbit": "SSO",
+      "count": 5,
+      "sum": 5,
+      "mean": 1.0
+    },
+    {
+      "Orbit": "VLEO",
+      "count": 14,
+      "sum": 12,
+      "mean": 0.8571428571428571
+    }
+  ],
+  "yearly": [
+    {
+      "Year": 2010,
+      "count": 1,
+      "mean": 0.0
+    },
+    {
+      "Year": 2012,
+      "count": 1,
+      "mean": 0.0
+    },
+    {
+      "Year": 2013,
+      "count": 3,
+      "mean": 0.0
+    },
+    {
+      "Year": 2014,
+      "count": 6,
+      "mean": 0.3333333333333333
+    },
+    {
+      "Year": 2015,
+      "count": 6,
+      "mean": 0.3333333333333333
+    },
+    {
+      "Year": 2016,
+      "count": 8,
+      "mean": 0.625
+    },
+    {
+      "Year": 2017,
+      "count": 18,
+      "mean": 0.8333333333333334
+    },
+    {
+      "Year": 2018,
+      "count": 18,
+      "mean": 0.6111111111111112
+    },
+    {
+      "Year": 2019,
+      "count": 10,
+      "mean": 0.9
+    },
+    {
+      "Year": 2020,
+      "count": 19,
+      "mean": 0.8421052631578947
+    }
+  ],
+  "results": [
+    {
+      "model": "Logistic regression",
+      "cv_accuracy": 0.8323809523809524,
+      "cv_std": 0.07268108201271965,
+      "test_accuracy": 0.8333333333333334,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8888888888888888,
+      "params": {
+        "model__C": 0.01
+      },
+      "confusion_matrix": [
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "model": "SVM",
+      "cv_accuracy": 0.8476190476190476,
+      "cv_std": 0.05119878116463091,
+      "test_accuracy": 0.8333333333333334,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8888888888888888,
+      "params": {
+        "model__C": 0.01,
+        "model__gamma": 0.001,
+        "model__kernel": "linear"
+      },
+      "confusion_matrix": [
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "model": "Decision tree",
+      "cv_accuracy": 0.818095238095238,
+      "cv_std": 0.07342603911389098,
+      "test_accuracy": 0.7222222222222222,
+      "precision": 0.7692307692307693,
+      "recall": 0.8333333333333334,
+      "f1": 0.8,
+      "params": {
+        "model__criterion": "entropy",
+        "model__max_depth": 6,
+        "model__min_samples_leaf": 2,
+        "model__min_samples_split": 2
+      },
+      "confusion_matrix": [
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "model": "KNN",
+      "cv_accuracy": 0.8476190476190476,
+      "cv_std": 0.05119878116463091,
+      "test_accuracy": 0.8333333333333334,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8888888888888888,
+      "params": {
+        "model__n_neighbors": 9,
+        "model__p": 1,
+        "model__weights": "uniform"
+      },
+      "confusion_matrix": [
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          12
+        ]
+      ]
+    }
+  ],
+  "best_model": "SVM",
+  "baseline_test_accuracy": 0.6666666666666666,
+  "test_indices": [
+    48,
+    77,
+    81,
+    79,
+    36,
+    84,
+    62,
+    14,
+    74,
+    0,
+    3,
+    13,
+    21,
+    87,
+    25,
+    28,
+    11,
+    23
+  ],
+  "test_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "predictions": {
+    "Logistic regression": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "SVM": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "Decision tree": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "KNN": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "train_n": 72,
+  "test_n": 18,
+  "lab_replication": {
+    "svm_params": {
+      "C": 1.0,
+      "gamma": 0.03162277660168379,
+      "kernel": "sigmoid"
+    },
+    "cv_accuracy": 0.8482142857142856,
+    "test_accuracy": 0.8333333333333334
+  },
+  "sql": {
+    "launch_sites": [
+      {
+        "Launch_Site": "CCAFS LC-40"
+      },
+      {
+        "Launch_Site": "CCAFS SLC-40"
+      },
+      {
+        "Launch_Site": "KSC LC-39A"
+      },
+      {
+        "Launch_Site": "VAFB SLC-4E"
+      }
+    ],
+    "ccaf_sites": [
+      {
+        "Launch_Site": "CCAFS LC-40"
+      },
+      {
+        "Launch_Site": "CCAFS SLC-40"
+      }
+    ],
+    "nasa_payload": [
+      {
+        "total_kg": 45596
+      }
+    ],
+    "f9v11_average": [
+      {
+        "average_kg": 2534.6666666666665
+      }
+    ],
+    "first_ground_success": [
+      {
+        "first_date": "2015-12-22"
+      }
+    ],
+    "drone_4to6t": [
+      {
+        "Date": "2016-05-06",
+        "Booster_Version": "F9 FT B1022",
+        "PAYLOAD_MASS__KG_": 4696
+      },
+      {
+        "Date": "2016-08-14",
+        "Booster_Version": "F9 FT B1026",
+        "PAYLOAD_MASS__KG_": 4600
+      },
+      {
+        "Date": "2017-03-30",
+        "Booster_Version": "F9 FT  B1021.2",
+        "PAYLOAD_MASS__KG_": 5300
+      },
+      {
+        "Date": "2017-10-11",
+        "Booster_Version": "F9 FT  B1031.2",
+        "PAYLOAD_MASS__KG_": 5200
+      }
+    ],
+    "mission_outcomes": [
+      {
+        "Mission_Outcome": "Failure (in flight)",
+        "launches": 1
+      },
+      {
+        "Mission_Outcome": "Success",
+        "launches": 99
+      },
+      {
+        "Mission_Outcome": "Success (payload status unclear)",
+        "launches": 1
+      }
+    ],
+    "max_payload_boosters": [
+      {
+        "Booster_Version": "F9 B5 B1048.4",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1049.4",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1051.3",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1056.4",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1048.5",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1051.4",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1049.5",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1060.2",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1058.3",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1051.6",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1060.3",
+        "PAYLOAD_MASS__KG_": 15600
+      },
+      {
+        "Booster_Version": "F9 B5 B1049.7",
+        "PAYLOAD_MASS__KG_": 15600
+      }
+    ],
+    "drone_failures_2015": [
+      {
+        "month": "01",
+        "Booster_Version": "F9 v1.1 B1012",
+        "Launch_Site": "CCAFS LC-40"
+      },
+      {
+        "month": "04",
+        "Booster_Version": "F9 v1.1 B1015",
+        "Launch_Site": "CCAFS LC-40"
+      }
+    ],
+    "landing_rank": [
+      {
+        "Landing_Outcome": "No attempt",
+        "launches": 10
+      },
+      {
+        "Landing_Outcome": "Success (drone ship)",
+        "launches": 5
+      },
+      {
+        "Landing_Outcome": "Failure (drone ship)",
+        "launches": 5
+      },
+      {
+        "Landing_Outcome": "Success (ground pad)",
+        "launches": 3
+      },
+      {
+        "Landing_Outcome": "Controlled (ocean)",
+        "launches": 3
+      },
+      {
+        "Landing_Outcome": "Uncontrolled (ocean)",
+        "launches": 2
+      },
+      {
+        "Landing_Outcome": "Failure (parachute)",
+        "launches": 2
+      },
+      {
+        "Landing_Outcome": "Precluded (drone ship)",
+        "launches": 1
+      }
+    ],
+    "by_site": [
+      {
+        "Launch_Site": "CCAFS LC-40",
+        "launches": 26,
+        "mission_successes": 25
+      },
+      {
+        "Launch_Site": "CCAFS SLC-40",
+        "launches": 34,
+        "mission_successes": 33
+      },
+      {
+        "Launch_Site": "KSC LC-39A",
+        "launches": 25,
+        "mission_successes": 25
+      },
+      {
+        "Launch_Site": "VAFB SLC-4E",
+        "launches": 16,
+        "mission_successes": 16
+      }
+    ]
+  },
+  "queries": {
+    "launch_sites": "SELECT DISTINCT Launch_Site FROM SPACEXTBL ORDER BY Launch_Site",
+    "ccaf_sites": "SELECT DISTINCT Launch_Site FROM SPACEXTBL WHERE Launch_Site LIKE 'CCA%'",
+    "nasa_payload": "SELECT SUM(PAYLOAD_MASS__KG_) AS total_kg FROM SPACEXTBL WHERE Customer = 'NASA (CRS)'",
+    "f9v11_average": "SELECT AVG(PAYLOAD_MASS__KG_) AS average_kg FROM SPACEXTBL WHERE Booster_Version LIKE 'F9 v1.1%'",
+    "first_ground_success": "SELECT MIN(Date) AS first_date FROM SPACEXTBL WHERE Landing_Outcome = 'Success (ground pad)'",
+    "drone_4to6t": "SELECT Date,Booster_Version,PAYLOAD_MASS__KG_ FROM SPACEXTBL WHERE Landing_Outcome = 'Success (drone ship)' AND PAYLOAD_MASS__KG_ > 4000 AND PAYLOAD_MASS__KG_ < 6000",
+    "mission_outcomes": "SELECT Mission_Outcome,COUNT(*) AS launches FROM SPACEXTBL GROUP BY Mission_Outcome",
+    "max_payload_boosters": "SELECT DISTINCT Booster_Version,PAYLOAD_MASS__KG_ FROM SPACEXTBL WHERE PAYLOAD_MASS__KG_ = (SELECT MAX(PAYLOAD_MASS__KG_) FROM SPACEXTBL)",
+    "drone_failures_2015": "SELECT strftime('%m',Date) AS month,Booster_Version,Launch_Site FROM SPACEXTBL WHERE Landing_Outcome = 'Failure (drone ship)' AND strftime('%Y',Date) = '2015'",
+    "landing_rank": "SELECT Landing_Outcome,COUNT(*) AS launches FROM SPACEXTBL WHERE Date BETWEEN '2010-06-04' AND '2017-03-20' GROUP BY Landing_Outcome ORDER BY launches DESC",
+    "by_site": "SELECT Launch_Site,COUNT(*) AS launches,SUM(CASE WHEN Mission_Outcome='Success' THEN 1 ELSE 0 END) AS mission_successes FROM SPACEXTBL GROUP BY Launch_Site"
+  },
+  "sql_n": 101
+}

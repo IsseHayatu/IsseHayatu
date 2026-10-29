@@ -1,0 +1,26 @@
+[
+  {
+    "reference": "Coastline reference",
+    "latitude": 28.56367,
+    "longitude": -80.57163,
+    "distance_km": 0.51
+  },
+  {
+    "reference": "Road reference",
+    "latitude": 28.5632,
+    "longitude": -80.6,
+    "distance_km": 2.264
+  },
+  {
+    "reference": "Rail reference",
+    "latitude": 28.572,
+    "longitude": -80.585,
+    "distance_km": 1.263
+  },
+  {
+    "reference": "Titusville reference",
+    "latitude": 28.6122,
+    "longitude": -80.8076,
+    "distance_km": 23.183
+  }
+]
