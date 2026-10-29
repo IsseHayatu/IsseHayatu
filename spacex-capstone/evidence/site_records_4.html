@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b56e87fc2fcd4ffef28e159ded0f4c1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b56e87fc2fcd4ffef28e159ded0f4c1d" ></div>
+        
+</body>
+<script>
+    
+    setTimeout(function(){var map=map_b56e87fc2fcd4ffef28e159ded0f4c1d;map.panBy([0,-25],{animate:false});var p=marker_cluster_a6e291fa31e028ea2e1c8845ae299aba.getVisibleParent(marker_cb4a4e960f1f29e7fea99eb55728eeb3);if(p && p.spiderfy)p.spiderfy();},600);
+    
+            var map_b56e87fc2fcd4ffef28e159ded0f4c1d = L.map(
+                "map_b56e87fc2fcd4ffef28e159ded0f4c1d",
+                {
+                    center: [34.63283416, -120.6107455],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "maxZoom": 18,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_379e7faf33cd99254bee642cef992ab8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_379e7faf33cd99254bee642cef992ab8.addTo(map_b56e87fc2fcd4ffef28e159ded0f4c1d);
+        
+    
+            var marker_cluster_a6e291fa31e028ea2e1c8845ae299aba = L.markerClusterGroup(
+                {
+  "spiderfyOnMaxZoom": true,
+  "spiderfyDistanceMultiplier": 1.3,
+  "showCoverageOnHover": false,
+}
+            );
+        
+    
+            var marker_cb4a4e960f1f29e7fea99eb55728eeb3 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_a9f3af9cf966ddf2d0a67b4812e9ea3e = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e6\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_6caba22188bb85b23d479ccbc6904a90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62d30818e398b8a18b8ed742d422d0a8 = $(`<div id="html_62d30818e398b8a18b8ed742d422d0a8" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 6<br>2013-09-29<br>Uncontrolled (ocean)<br>class 0</div>`)[0];
+                popup_6caba22188bb85b23d479ccbc6904a90.setContent(html_62d30818e398b8a18b8ed742d422d0a8);
+            
+        
+
+        marker_cb4a4e960f1f29e7fea99eb55728eeb3.bindPopup(popup_6caba22188bb85b23d479ccbc6904a90)
+        ;
+
+        
+    
+    
+            marker_cb4a4e960f1f29e7fea99eb55728eeb3.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 6 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb4a4e960f1f29e7fea99eb55728eeb3.setIcon(div_icon_a9f3af9cf966ddf2d0a67b4812e9ea3e);
+            
+    
+            var marker_8b0e5192879dbdf5b82ed32514aee221 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_2cf9662858e5d54b12907aa2fed6373e = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e21\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_819faa33f330a916774dc5fbb650effe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc141a9badf62926799d56c56d95bdbd = $(`<div id="html_cc141a9badf62926799d56c56d95bdbd" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 21<br>2016-01-17<br>Failure (drone ship)<br>class 0</div>`)[0];
+                popup_819faa33f330a916774dc5fbb650effe.setContent(html_cc141a9badf62926799d56c56d95bdbd);
+            
+        
+
+        marker_8b0e5192879dbdf5b82ed32514aee221.bindPopup(popup_819faa33f330a916774dc5fbb650effe)
+        ;
+
+        
+    
+    
+            marker_8b0e5192879dbdf5b82ed32514aee221.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 21 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b0e5192879dbdf5b82ed32514aee221.setIcon(div_icon_2cf9662858e5d54b12907aa2fed6373e);
+            
+    
+            var marker_1a47fd635035c13ab82c0cc5f219b8e0 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_c133230367a010f4a190025d04c9376c = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e29\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_5bacab151ff8a72fd7dc652522842d9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8b5455af121463f92aff72fca2aa0b3 = $(`<div id="html_a8b5455af121463f92aff72fca2aa0b3" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 29<br>2017-01-14<br>Success  (drone ship)<br>class 1</div>`)[0];
+                popup_5bacab151ff8a72fd7dc652522842d9d.setContent(html_a8b5455af121463f92aff72fca2aa0b3);
+            
+        
+
+        marker_1a47fd635035c13ab82c0cc5f219b8e0.bindPopup(popup_5bacab151ff8a72fd7dc652522842d9d)
+        ;
+
+        
+    
+    
+            marker_1a47fd635035c13ab82c0cc5f219b8e0.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 29 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a47fd635035c13ab82c0cc5f219b8e0.setIcon(div_icon_c133230367a010f4a190025d04c9376c);
+            
+    
+            var marker_1eea28c2556b853e9187e6ddc69962bb = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_0aa4afe43ce0c779a7db8b2f1d3e419b = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e37\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_076a34d4b76bac47c2944c55ef9f6155 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_992886142a3f2ede0b883156c4242985 = $(`<div id="html_992886142a3f2ede0b883156c4242985" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 37<br>2017-06-25<br>Success (drone ship)<br>class 1</div>`)[0];
+                popup_076a34d4b76bac47c2944c55ef9f6155.setContent(html_992886142a3f2ede0b883156c4242985);
+            
+        
+
+        marker_1eea28c2556b853e9187e6ddc69962bb.bindPopup(popup_076a34d4b76bac47c2944c55ef9f6155)
+        ;
+
+        
+    
+    
+            marker_1eea28c2556b853e9187e6ddc69962bb.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 37 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1eea28c2556b853e9187e6ddc69962bb.setIcon(div_icon_0aa4afe43ce0c779a7db8b2f1d3e419b);
+            
+    
+            var marker_34e2ac86253d7d6ed35982f90e749f0d = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_7356a0c1be6adb4f783772f39470034a = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e40\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_24e09b76de0399c068f2877d3b3d5092 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43ac7a8abcbb34e532575962a1a8c4a6 = $(`<div id="html_43ac7a8abcbb34e532575962a1a8c4a6" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 40<br>2017-08-24<br>Success (drone ship)<br>class 1</div>`)[0];
+                popup_24e09b76de0399c068f2877d3b3d5092.setContent(html_43ac7a8abcbb34e532575962a1a8c4a6);
+            
+        
+
+        marker_34e2ac86253d7d6ed35982f90e749f0d.bindPopup(popup_24e09b76de0399c068f2877d3b3d5092)
+        ;
+
+        
+    
+    
+            marker_34e2ac86253d7d6ed35982f90e749f0d.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 40 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34e2ac86253d7d6ed35982f90e749f0d.setIcon(div_icon_7356a0c1be6adb4f783772f39470034a);
+            
+    
+            var marker_b246fa42b15c9e201a2bbb29eb0133d8 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_74300e8cacea40c86b92c6cb751b63bc = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e42\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_2b14162157c6e438e1601cc9af71cb54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73fe4613dfd023946e88a788eda2dc89 = $(`<div id="html_73fe4613dfd023946e88a788eda2dc89" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 42<br>2017-10-09<br>Success (drone ship)<br>class 1</div>`)[0];
+                popup_2b14162157c6e438e1601cc9af71cb54.setContent(html_73fe4613dfd023946e88a788eda2dc89);
+            
+        
+
+        marker_b246fa42b15c9e201a2bbb29eb0133d8.bindPopup(popup_2b14162157c6e438e1601cc9af71cb54)
+        ;
+
+        
+    
+    
+            marker_b246fa42b15c9e201a2bbb29eb0133d8.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 42 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b246fa42b15c9e201a2bbb29eb0133d8.setIcon(div_icon_74300e8cacea40c86b92c6cb751b63bc);
+            
+    
+            var marker_9f29e3e9306718771b8f420e06aa281d = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_a3e3b8e174f64eea5b865fcf1dac4e5c = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e46\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_f6515e9c9d25a741c4d2c4bd082adaef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35c26a36f936ac241426a1a732659cd1 = $(`<div id="html_35c26a36f936ac241426a1a732659cd1" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 46<br>2017-12-23<br>Controlled (ocean)<br>class 0</div>`)[0];
+                popup_f6515e9c9d25a741c4d2c4bd082adaef.setContent(html_35c26a36f936ac241426a1a732659cd1);
+            
+        
+
+        marker_9f29e3e9306718771b8f420e06aa281d.bindPopup(popup_f6515e9c9d25a741c4d2c4bd082adaef)
+        ;
+
+        
+    
+    
+            marker_9f29e3e9306718771b8f420e06aa281d.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 46 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f29e3e9306718771b8f420e06aa281d.setIcon(div_icon_a3e3b8e174f64eea5b865fcf1dac4e5c);
+            
+    
+            var marker_b0b273587d014197ad4f06c25e47845f = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_f297a5ce69652ced01716d6e875c5a45 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e49\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_b9b07feec2e09ab90211b27caf6942e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d56bfec3cf69526f3b988a0e10fe82bf = $(`<div id="html_d56bfec3cf69526f3b988a0e10fe82bf" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 49<br>2018-02-22<br>No attempt<br>class 0</div>`)[0];
+                popup_b9b07feec2e09ab90211b27caf6942e2.setContent(html_d56bfec3cf69526f3b988a0e10fe82bf);
+            
+        
+
+        marker_b0b273587d014197ad4f06c25e47845f.bindPopup(popup_b9b07feec2e09ab90211b27caf6942e2)
+        ;
+
+        
+    
+    
+            marker_b0b273587d014197ad4f06c25e47845f.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 49 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b0b273587d014197ad4f06c25e47845f.setIcon(div_icon_f297a5ce69652ced01716d6e875c5a45);
+            
+    
+            var marker_940a53cc171bece32d6f10d4108c1169 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_de25f36f957684c8b0d109899fe0cb4f = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e51\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_5f7e9381a2dee4b8eea25a2b7b9f6905 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8fe2983c1e231ad889e866c913fc2c5 = $(`<div id="html_a8fe2983c1e231ad889e866c913fc2c5" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 51<br>2018-03-30<br>No attempt<br>class 0</div>`)[0];
+                popup_5f7e9381a2dee4b8eea25a2b7b9f6905.setContent(html_a8fe2983c1e231ad889e866c913fc2c5);
+            
+        
+
+        marker_940a53cc171bece32d6f10d4108c1169.bindPopup(popup_5f7e9381a2dee4b8eea25a2b7b9f6905)
+        ;
+
+        
+    
+    
+            marker_940a53cc171bece32d6f10d4108c1169.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 51 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_940a53cc171bece32d6f10d4108c1169.setIcon(div_icon_de25f36f957684c8b0d109899fe0cb4f);
+            
+    
+            var marker_bd7f7d5fd648b9905739c2c40869bc2d = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(marker_cluster_a6e291fa31e028ea2e1c8845ae299aba);
+        
+    
+            var div_icon_6609bfda9c91f88cb0e75e0ecdaabfcc = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e55\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_093a0766ed7f9705e2a16bc4ea26241f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fd4e8b0e5d5c7a47cfa007728f1fe35 = $(`<div id="html_5fd4e8b0e5d5c7a47cfa007728f1fe35" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Flight 55<br>2018-05-22<br>No attempt<br>class 0</div>`)[0];
+                popup_093a0766ed7f9705e2a16bc4ea26241f.setContent(html_5fd4e8b0e5d5c7a47cfa007728f1fe35);
+            
+        
+
+        marker_bd7f7d5fd648b9905739c2c40869bc2d.bindPopup(popup_093a0766ed7f9705e2a16bc4ea26241f)
+        ;
+
+        
+    
+    
+            marker_bd7f7d5fd648b9905739c2c40869bc2d.bindTooltip(
+                `<div>
+                     VAFB SLC-4E | Flight 55 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd7f7d5fd648b9905739c2c40869bc2d.setIcon(div_icon_6609bfda9c91f88cb0e75e0ecdaabfcc);
+            
+    
+            marker_cluster_a6e291fa31e028ea2e1c8845ae299aba.addTo(map_b56e87fc2fcd4ffef28e159ded0f4c1d);
+        
+</script>
+</html>

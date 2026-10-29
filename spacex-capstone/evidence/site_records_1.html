@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd2b855dbde7bd11cdafd3c85c1a6d4b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bd2b855dbde7bd11cdafd3c85c1a6d4b" ></div>
+        
+</body>
+<script>
+    
+    setTimeout(function(){var map=map_bd2b855dbde7bd11cdafd3c85c1a6d4b;map.panBy([0,-25],{animate:false});var p=marker_cluster_267b6d134efb8fff207464f38ebb771e.getVisibleParent(marker_8717179041a2b5f9bb1ef382bc24a678);if(p && p.spiderfy)p.spiderfy();},600);
+    
+            var map_bd2b855dbde7bd11cdafd3c85c1a6d4b = L.map(
+                "map_bd2b855dbde7bd11cdafd3c85c1a6d4b",
+                {
+                    center: [28.56230197, -80.57735648],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "maxZoom": 18,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3832334e18bd2d4928cd66474293eabc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3832334e18bd2d4928cd66474293eabc.addTo(map_bd2b855dbde7bd11cdafd3c85c1a6d4b);
+        
+    
+            var marker_cluster_267b6d134efb8fff207464f38ebb771e = L.markerClusterGroup(
+                {
+  "spiderfyOnMaxZoom": true,
+  "spiderfyDistanceMultiplier": 1.3,
+  "showCoverageOnHover": false,
+}
+            );
+        
+    
+            var marker_8717179041a2b5f9bb1ef382bc24a678 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_40b03a0702447e3339c6974803462b76 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e1\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_42492939a4232766195f12d25429417e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac11f316637d631e24668ed40808b0b7 = $(`<div id="html_ac11f316637d631e24668ed40808b0b7" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 1<br>2010-06-04<br>Failure   (parachute)<br>class 0</div>`)[0];
+                popup_42492939a4232766195f12d25429417e.setContent(html_ac11f316637d631e24668ed40808b0b7);
+            
+        
+
+        marker_8717179041a2b5f9bb1ef382bc24a678.bindPopup(popup_42492939a4232766195f12d25429417e)
+        ;
+
+        
+    
+    
+            marker_8717179041a2b5f9bb1ef382bc24a678.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 1 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8717179041a2b5f9bb1ef382bc24a678.setIcon(div_icon_40b03a0702447e3339c6974803462b76);
+            
+    
+            var marker_37951815339e75852c8837c8ffaf5f10 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_1009d47382dc8a98f7492ab8c31e2e91 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e2\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_c19d5f57d382c19bebdce357041afa0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65f7d80f8ba1bb72540d4b19d9ae161c = $(`<div id="html_65f7d80f8ba1bb72540d4b19d9ae161c" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 2<br>2010-12-08<br>Failure   (parachute)<br>class 0</div>`)[0];
+                popup_c19d5f57d382c19bebdce357041afa0b.setContent(html_65f7d80f8ba1bb72540d4b19d9ae161c);
+            
+        
+
+        marker_37951815339e75852c8837c8ffaf5f10.bindPopup(popup_c19d5f57d382c19bebdce357041afa0b)
+        ;
+
+        
+    
+    
+            marker_37951815339e75852c8837c8ffaf5f10.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 2 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37951815339e75852c8837c8ffaf5f10.setIcon(div_icon_1009d47382dc8a98f7492ab8c31e2e91);
+            
+    
+            var marker_fc18bc81a45446a54c137b4060bb94df = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_7b55f8d3c765682c3077e56230cc2641 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e3\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_23d1255d118727127cdd8bef71930e6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82faf14c9033cb14b65bada2fe0d7783 = $(`<div id="html_82faf14c9033cb14b65bada2fe0d7783" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 3<br>2012-05-22<br>No attempt<br>class 0</div>`)[0];
+                popup_23d1255d118727127cdd8bef71930e6c.setContent(html_82faf14c9033cb14b65bada2fe0d7783);
+            
+        
+
+        marker_fc18bc81a45446a54c137b4060bb94df.bindPopup(popup_23d1255d118727127cdd8bef71930e6c)
+        ;
+
+        
+    
+    
+            marker_fc18bc81a45446a54c137b4060bb94df.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 3 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc18bc81a45446a54c137b4060bb94df.setIcon(div_icon_7b55f8d3c765682c3077e56230cc2641);
+            
+    
+            var marker_9c6cba4e0109d718abd7ec3d36c88e47 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_bb02e79db3f5f140184d682c231f0828 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e4\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_00d430ac5e3f982b70d1c5208a433e32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7c54052cb8cb8e3603a93d949a3f399 = $(`<div id="html_c7c54052cb8cb8e3603a93d949a3f399" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 4<br>2012-10-08<br>No attempt<br>class 0</div>`)[0];
+                popup_00d430ac5e3f982b70d1c5208a433e32.setContent(html_c7c54052cb8cb8e3603a93d949a3f399);
+            
+        
+
+        marker_9c6cba4e0109d718abd7ec3d36c88e47.bindPopup(popup_00d430ac5e3f982b70d1c5208a433e32)
+        ;
+
+        
+    
+    
+            marker_9c6cba4e0109d718abd7ec3d36c88e47.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 4 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9c6cba4e0109d718abd7ec3d36c88e47.setIcon(div_icon_bb02e79db3f5f140184d682c231f0828);
+            
+    
+            var marker_296a5cc0b5dc784eedcf1e42c63e2e13 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_25c17f31ded11b403f2d7f4567f967e7 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e5\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_9c6479a1c84f42299faf1263224f37bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4280ca8aae0092001e011298b77040d3 = $(`<div id="html_4280ca8aae0092001e011298b77040d3" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 5<br>2013-03-01<br>No attempt<br>class 0</div>`)[0];
+                popup_9c6479a1c84f42299faf1263224f37bd.setContent(html_4280ca8aae0092001e011298b77040d3);
+            
+        
+
+        marker_296a5cc0b5dc784eedcf1e42c63e2e13.bindPopup(popup_9c6479a1c84f42299faf1263224f37bd)
+        ;
+
+        
+    
+    
+            marker_296a5cc0b5dc784eedcf1e42c63e2e13.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 5 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_296a5cc0b5dc784eedcf1e42c63e2e13.setIcon(div_icon_25c17f31ded11b403f2d7f4567f967e7);
+            
+    
+            var marker_474719d5e4e951ea58a380721fb56cad = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_db5fafdc70cb5f214474749d2ac09a9b = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e7\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_1a5276df8e2308e9adf9320b2e75c824 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7b184389c01a5ca7ed4434769d26b55 = $(`<div id="html_f7b184389c01a5ca7ed4434769d26b55" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 7<br>2013-12-03<br>No attempt<br>class 0</div>`)[0];
+                popup_1a5276df8e2308e9adf9320b2e75c824.setContent(html_f7b184389c01a5ca7ed4434769d26b55);
+            
+        
+
+        marker_474719d5e4e951ea58a380721fb56cad.bindPopup(popup_1a5276df8e2308e9adf9320b2e75c824)
+        ;
+
+        
+    
+    
+            marker_474719d5e4e951ea58a380721fb56cad.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 7 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_474719d5e4e951ea58a380721fb56cad.setIcon(div_icon_db5fafdc70cb5f214474749d2ac09a9b);
+            
+    
+            var marker_5847648686f34689420f3ede09eb1ede = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_142f241fa276bc783411420986bae3e9 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e8\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_337fa515903d4f5ffadc439d5a7f635d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61f6b2134feee8fda1ef97f866281365 = $(`<div id="html_61f6b2134feee8fda1ef97f866281365" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 8<br>2014-01-06<br>No attempt<br>class 0</div>`)[0];
+                popup_337fa515903d4f5ffadc439d5a7f635d.setContent(html_61f6b2134feee8fda1ef97f866281365);
+            
+        
+
+        marker_5847648686f34689420f3ede09eb1ede.bindPopup(popup_337fa515903d4f5ffadc439d5a7f635d)
+        ;
+
+        
+    
+    
+            marker_5847648686f34689420f3ede09eb1ede.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 8 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5847648686f34689420f3ede09eb1ede.setIcon(div_icon_142f241fa276bc783411420986bae3e9);
+            
+    
+            var marker_a8051c6f3ca6f62410adbd2e34787b6a = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_16e864d1fecc27018394c67df99946de = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e9\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_fea8a1e9fa94754a904f48bf1c811dd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e2a108293087f439b5a791d6b6b4600 = $(`<div id="html_2e2a108293087f439b5a791d6b6b4600" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 9<br>2014-04-18<br>Controlled (ocean)<br>class 0</div>`)[0];
+                popup_fea8a1e9fa94754a904f48bf1c811dd1.setContent(html_2e2a108293087f439b5a791d6b6b4600);
+            
+        
+
+        marker_a8051c6f3ca6f62410adbd2e34787b6a.bindPopup(popup_fea8a1e9fa94754a904f48bf1c811dd1)
+        ;
+
+        
+    
+    
+            marker_a8051c6f3ca6f62410adbd2e34787b6a.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 9 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8051c6f3ca6f62410adbd2e34787b6a.setIcon(div_icon_16e864d1fecc27018394c67df99946de);
+            
+    
+            var marker_f23807951d8116b44faaf343c950b2ce = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_53e3fdc63c08a4faed09205868466c94 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e10\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_de2ba3458151f70a3870cb216f055a67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84a395d6813e6994f46b2ecd18444ca8 = $(`<div id="html_84a395d6813e6994f46b2ecd18444ca8" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 10<br>2014-07-14<br>Controlled (ocean)<br>class 0</div>`)[0];
+                popup_de2ba3458151f70a3870cb216f055a67.setContent(html_84a395d6813e6994f46b2ecd18444ca8);
+            
+        
+
+        marker_f23807951d8116b44faaf343c950b2ce.bindPopup(popup_de2ba3458151f70a3870cb216f055a67)
+        ;
+
+        
+    
+    
+            marker_f23807951d8116b44faaf343c950b2ce.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 10 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f23807951d8116b44faaf343c950b2ce.setIcon(div_icon_53e3fdc63c08a4faed09205868466c94);
+            
+    
+            var marker_ad78b84f3ceaf55472c87ccdb412bd79 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_2a136b91275cec6f72447e735b3b7020 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e11\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_44dd763720d6b2f734a98445d8c7a657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bb5d6ac89776edbc11b91b9e8671328 = $(`<div id="html_5bb5d6ac89776edbc11b91b9e8671328" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 11<br>2014-08-05<br>No attempt<br>class 0</div>`)[0];
+                popup_44dd763720d6b2f734a98445d8c7a657.setContent(html_5bb5d6ac89776edbc11b91b9e8671328);
+            
+        
+
+        marker_ad78b84f3ceaf55472c87ccdb412bd79.bindPopup(popup_44dd763720d6b2f734a98445d8c7a657)
+        ;
+
+        
+    
+    
+            marker_ad78b84f3ceaf55472c87ccdb412bd79.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 11 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad78b84f3ceaf55472c87ccdb412bd79.setIcon(div_icon_2a136b91275cec6f72447e735b3b7020);
+            
+    
+            var marker_024523c368d326e9519b129a7dee8470 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_bfad0c9619c84597c0543bc20905a797 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e12\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_f0def6c756503e4332e6f195a24362ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfde14f269b0f93d22e3961efd614165 = $(`<div id="html_dfde14f269b0f93d22e3961efd614165" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 12<br>2014-09-07<br>No attempt<br>class 0</div>`)[0];
+                popup_f0def6c756503e4332e6f195a24362ab.setContent(html_dfde14f269b0f93d22e3961efd614165);
+            
+        
+
+        marker_024523c368d326e9519b129a7dee8470.bindPopup(popup_f0def6c756503e4332e6f195a24362ab)
+        ;
+
+        
+    
+    
+            marker_024523c368d326e9519b129a7dee8470.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 12 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_024523c368d326e9519b129a7dee8470.setIcon(div_icon_bfad0c9619c84597c0543bc20905a797);
+            
+    
+            var marker_90e1e9b4b94f6199df1129f2b0904f3f = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_6ee83e86c2ad358225cd833410bf2668 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e13\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_5ae774a36a6901d227e542778723c42a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0397f7600e564d05252e31669fb1bbd = $(`<div id="html_d0397f7600e564d05252e31669fb1bbd" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 13<br>2014-09-21<br>Uncontrolled (ocean)<br>class 0</div>`)[0];
+                popup_5ae774a36a6901d227e542778723c42a.setContent(html_d0397f7600e564d05252e31669fb1bbd);
+            
+        
+
+        marker_90e1e9b4b94f6199df1129f2b0904f3f.bindPopup(popup_5ae774a36a6901d227e542778723c42a)
+        ;
+
+        
+    
+    
+            marker_90e1e9b4b94f6199df1129f2b0904f3f.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 13 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90e1e9b4b94f6199df1129f2b0904f3f.setIcon(div_icon_6ee83e86c2ad358225cd833410bf2668);
+            
+    
+            var marker_b45cbb547ce42865fb5e80771066a5cc = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_f8504ced9e2e753a3e733cb9341fcb1b = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e14\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_194dfe08731268355ddf7e1029fd748d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c85141e45afa7e2e0af26f3765bd685a = $(`<div id="html_c85141e45afa7e2e0af26f3765bd685a" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 14<br>2015-01-10<br>Failure  (drone ship)<br>class 0</div>`)[0];
+                popup_194dfe08731268355ddf7e1029fd748d.setContent(html_c85141e45afa7e2e0af26f3765bd685a);
+            
+        
+
+        marker_b45cbb547ce42865fb5e80771066a5cc.bindPopup(popup_194dfe08731268355ddf7e1029fd748d)
+        ;
+
+        
+    
+    
+            marker_b45cbb547ce42865fb5e80771066a5cc.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 14 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b45cbb547ce42865fb5e80771066a5cc.setIcon(div_icon_f8504ced9e2e753a3e733cb9341fcb1b);
+            
+    
+            var marker_294c1b2a044af1b92ec7a2834a254a05 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_55237cdb08bef3a085e139892b5b96df = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e15\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_45329e21588b752330bdb3548a34d08e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe034acc4a1db7ad379004712da94519 = $(`<div id="html_fe034acc4a1db7ad379004712da94519" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 15<br>2015-02-11<br>Controlled (ocean)<br>class 0</div>`)[0];
+                popup_45329e21588b752330bdb3548a34d08e.setContent(html_fe034acc4a1db7ad379004712da94519);
+            
+        
+
+        marker_294c1b2a044af1b92ec7a2834a254a05.bindPopup(popup_45329e21588b752330bdb3548a34d08e)
+        ;
+
+        
+    
+    
+            marker_294c1b2a044af1b92ec7a2834a254a05.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 15 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_294c1b2a044af1b92ec7a2834a254a05.setIcon(div_icon_55237cdb08bef3a085e139892b5b96df);
+            
+    
+            var marker_e9db582aa91f76c3136f9da0d529e1dc = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_87b5a99f203088a647d2bf34fc620520 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e16\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_f0c0b2434b8aa4eb857625c6d34d69c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29ad8fbc37255206a30d8abe4981866f = $(`<div id="html_29ad8fbc37255206a30d8abe4981866f" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 16<br>2015-03-02<br>No attempt<br>class 0</div>`)[0];
+                popup_f0c0b2434b8aa4eb857625c6d34d69c8.setContent(html_29ad8fbc37255206a30d8abe4981866f);
+            
+        
+
+        marker_e9db582aa91f76c3136f9da0d529e1dc.bindPopup(popup_f0c0b2434b8aa4eb857625c6d34d69c8)
+        ;
+
+        
+    
+    
+            marker_e9db582aa91f76c3136f9da0d529e1dc.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 16 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9db582aa91f76c3136f9da0d529e1dc.setIcon(div_icon_87b5a99f203088a647d2bf34fc620520);
+            
+    
+            var marker_c1233eec4ce72ba9074be440c03f541f = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_8cc303eef0df2a23c97b0bd1fd37fbd8 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e17\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_be8f2d335e6db3b17832a45035d91812 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0557147d4582d5f5738def97061e0f5 = $(`<div id="html_a0557147d4582d5f5738def97061e0f5" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 17<br>2015-04-14<br>Failure  (drone ship)<br>class 0</div>`)[0];
+                popup_be8f2d335e6db3b17832a45035d91812.setContent(html_a0557147d4582d5f5738def97061e0f5);
+            
+        
+
+        marker_c1233eec4ce72ba9074be440c03f541f.bindPopup(popup_be8f2d335e6db3b17832a45035d91812)
+        ;
+
+        
+    
+    
+            marker_c1233eec4ce72ba9074be440c03f541f.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 17 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1233eec4ce72ba9074be440c03f541f.setIcon(div_icon_8cc303eef0df2a23c97b0bd1fd37fbd8);
+            
+    
+            var marker_07e25012ad99d35593523b3f59dc2dc7 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_bd6b04b095acfe1db205505a5064ee8e = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e18\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_bb3b2ecd857628699c8324686b738b14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57b347823b828dd7c730e3471eb6301d = $(`<div id="html_57b347823b828dd7c730e3471eb6301d" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 18<br>2015-04-27<br>No attempt<br>class 0</div>`)[0];
+                popup_bb3b2ecd857628699c8324686b738b14.setContent(html_57b347823b828dd7c730e3471eb6301d);
+            
+        
+
+        marker_07e25012ad99d35593523b3f59dc2dc7.bindPopup(popup_bb3b2ecd857628699c8324686b738b14)
+        ;
+
+        
+    
+    
+            marker_07e25012ad99d35593523b3f59dc2dc7.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 18 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07e25012ad99d35593523b3f59dc2dc7.setIcon(div_icon_bd6b04b095acfe1db205505a5064ee8e);
+            
+    
+            var marker_b7d08984c2a0145bfa1d2b4a16bd73d8 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_bb2c1c749db89eb81edc36d0f16a5c82 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e19\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_8c5657ff799bce8924307a4c99aa7670 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e3630bdf9d504b171bb59152bd85b22 = $(`<div id="html_2e3630bdf9d504b171bb59152bd85b22" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 19<br>2015-06-28<br>Precluded  (drone ship)<br>class 1</div>`)[0];
+                popup_8c5657ff799bce8924307a4c99aa7670.setContent(html_2e3630bdf9d504b171bb59152bd85b22);
+            
+        
+
+        marker_b7d08984c2a0145bfa1d2b4a16bd73d8.bindPopup(popup_8c5657ff799bce8924307a4c99aa7670)
+        ;
+
+        
+    
+    
+            marker_b7d08984c2a0145bfa1d2b4a16bd73d8.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 19 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7d08984c2a0145bfa1d2b4a16bd73d8.setIcon(div_icon_bb2c1c749db89eb81edc36d0f16a5c82);
+            
+    
+            var marker_0a3bf42adfbd41555ae9e8f6eb846a99 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_234c485c708cefea4af05e5b302a5886 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e20\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_7df54bfa5a217ab8d234b73958e875ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9194e61ace5c7f7bff21968309cc92b1 = $(`<div id="html_9194e61ace5c7f7bff21968309cc92b1" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 20<br>2015-12-22<br>Success  (ground pad)<br>class 1</div>`)[0];
+                popup_7df54bfa5a217ab8d234b73958e875ff.setContent(html_9194e61ace5c7f7bff21968309cc92b1);
+            
+        
+
+        marker_0a3bf42adfbd41555ae9e8f6eb846a99.bindPopup(popup_7df54bfa5a217ab8d234b73958e875ff)
+        ;
+
+        
+    
+    
+            marker_0a3bf42adfbd41555ae9e8f6eb846a99.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 20 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a3bf42adfbd41555ae9e8f6eb846a99.setIcon(div_icon_234c485c708cefea4af05e5b302a5886);
+            
+    
+            var marker_f0f934cc860dccf2fe03326502b0f939 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_e153ac25dd037cdc0d3f9f760934e4ca = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e22\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_d74105459b78a1c3119b2d6c39c1af18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73492be41a761299c06fb6c5dffbbe41 = $(`<div id="html_73492be41a761299c06fb6c5dffbbe41" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 22<br>2016-03-04<br>Failure (drone ship)<br>class 0</div>`)[0];
+                popup_d74105459b78a1c3119b2d6c39c1af18.setContent(html_73492be41a761299c06fb6c5dffbbe41);
+            
+        
+
+        marker_f0f934cc860dccf2fe03326502b0f939.bindPopup(popup_d74105459b78a1c3119b2d6c39c1af18)
+        ;
+
+        
+    
+    
+            marker_f0f934cc860dccf2fe03326502b0f939.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 22 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0f934cc860dccf2fe03326502b0f939.setIcon(div_icon_e153ac25dd037cdc0d3f9f760934e4ca);
+            
+    
+            var marker_999ad5bbe9124f8ccc596a80bdbc53a4 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_2e84d8ad3b848911bc615a9223ba8f86 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e23\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_f79e2cd4a37318bb84d4423561c3b4f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f75cdddb4b46c64082988d71ccf0408c = $(`<div id="html_f75cdddb4b46c64082988d71ccf0408c" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 23<br>2016-04-08<br>Success  (drone ship)<br>class 1</div>`)[0];
+                popup_f79e2cd4a37318bb84d4423561c3b4f7.setContent(html_f75cdddb4b46c64082988d71ccf0408c);
+            
+        
+
+        marker_999ad5bbe9124f8ccc596a80bdbc53a4.bindPopup(popup_f79e2cd4a37318bb84d4423561c3b4f7)
+        ;
+
+        
+    
+    
+            marker_999ad5bbe9124f8ccc596a80bdbc53a4.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 23 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_999ad5bbe9124f8ccc596a80bdbc53a4.setIcon(div_icon_2e84d8ad3b848911bc615a9223ba8f86);
+            
+    
+            var marker_475251203779ac9676cf8da5d079223e = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_d60ded76e36e3352448fbdc7382e863a = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e24\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_4afd441e80f8e6b7d29691b7133b3559 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fafafbd60cff367e3c6cc6fb4a0ed676 = $(`<div id="html_fafafbd60cff367e3c6cc6fb4a0ed676" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 24<br>2016-05-06<br>Success (drone ship)<br>class 1</div>`)[0];
+                popup_4afd441e80f8e6b7d29691b7133b3559.setContent(html_fafafbd60cff367e3c6cc6fb4a0ed676);
+            
+        
+
+        marker_475251203779ac9676cf8da5d079223e.bindPopup(popup_4afd441e80f8e6b7d29691b7133b3559)
+        ;
+
+        
+    
+    
+            marker_475251203779ac9676cf8da5d079223e.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 24 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_475251203779ac9676cf8da5d079223e.setIcon(div_icon_d60ded76e36e3352448fbdc7382e863a);
+            
+    
+            var marker_10e9b20be42590567496dd226bf2d5e4 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_ed22a3fe21eaf9ee049a811584c2ecf9 = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e25\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_16327521b1089923b176a37e494b6f34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a8db89d37a85afdfd238e395d97b146 = $(`<div id="html_7a8db89d37a85afdfd238e395d97b146" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 25<br>2016-05-27<br>Success  (drone ship)<br>class 1</div>`)[0];
+                popup_16327521b1089923b176a37e494b6f34.setContent(html_7a8db89d37a85afdfd238e395d97b146);
+            
+        
+
+        marker_10e9b20be42590567496dd226bf2d5e4.bindPopup(popup_16327521b1089923b176a37e494b6f34)
+        ;
+
+        
+    
+    
+            marker_10e9b20be42590567496dd226bf2d5e4.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 25 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10e9b20be42590567496dd226bf2d5e4.setIcon(div_icon_ed22a3fe21eaf9ee049a811584c2ecf9);
+            
+    
+            var marker_318d0441ae6e9919ec5f6aba113a0517 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_656640a35bb6f05b7b95c81e656f3b7d = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#cc6c52;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e26\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_56c89a04f12244709d6356aeddb50173 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a092c5c1bffc604b9b3bdcc0206370ed = $(`<div id="html_a092c5c1bffc604b9b3bdcc0206370ed" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 26<br>2016-06-15<br>Failure  (drone ship)<br>class 0</div>`)[0];
+                popup_56c89a04f12244709d6356aeddb50173.setContent(html_a092c5c1bffc604b9b3bdcc0206370ed);
+            
+        
+
+        marker_318d0441ae6e9919ec5f6aba113a0517.bindPopup(popup_56c89a04f12244709d6356aeddb50173)
+        ;
+
+        
+    
+    
+            marker_318d0441ae6e9919ec5f6aba113a0517.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 26 | class 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_318d0441ae6e9919ec5f6aba113a0517.setIcon(div_icon_656640a35bb6f05b7b95c81e656f3b7d);
+            
+    
+            var marker_016a9b89412015b74ffa770fcacbfd53 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_d88be4aa13c43d09577e440d88846b2c = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e27\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_4ad6cc60b8896f4c73cd832c2924c05f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5afc98de72b7d475404dc39d9afb18ae = $(`<div id="html_5afc98de72b7d475404dc39d9afb18ae" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 27<br>2016-07-18<br>Success (ground pad)<br>class 1</div>`)[0];
+                popup_4ad6cc60b8896f4c73cd832c2924c05f.setContent(html_5afc98de72b7d475404dc39d9afb18ae);
+            
+        
+
+        marker_016a9b89412015b74ffa770fcacbfd53.bindPopup(popup_4ad6cc60b8896f4c73cd832c2924c05f)
+        ;
+
+        
+    
+    
+            marker_016a9b89412015b74ffa770fcacbfd53.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 27 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_016a9b89412015b74ffa770fcacbfd53.setIcon(div_icon_d88be4aa13c43d09577e440d88846b2c);
+            
+    
+            var marker_2cde12feda68d4dd63447660b1e7bb72 = L.marker(
+                [28.56230197, -80.57735648],
+                {
+}
+            ).addTo(marker_cluster_267b6d134efb8fff207464f38ebb771e);
+        
+    
+            var div_icon_f88e4095f9a80d921c1eb2fe7ec3130f = L.divIcon({
+  "html": "\u003cdiv style=\"width:38px;height:38px;border-radius:50%;border:2px solid white;background:#168a84;color:white;font:bold 20px Arial;text-align:center;line-height:38px\"\u003e28\u003c/div\u003e",
+  "iconSize": [38, 38],
+  "iconAnchor": [19, 19],
+  "className": "empty",
+});
+        
+    
+        var popup_26e6c954a27316264df2297979d64648 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a5f8c716d57b92f9ce78ae92c359089 = $(`<div id="html_2a5f8c716d57b92f9ce78ae92c359089" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Flight 28<br>2016-08-14<br>Success (drone ship)<br>class 1</div>`)[0];
+                popup_26e6c954a27316264df2297979d64648.setContent(html_2a5f8c716d57b92f9ce78ae92c359089);
+            
+        
+
+        marker_2cde12feda68d4dd63447660b1e7bb72.bindPopup(popup_26e6c954a27316264df2297979d64648)
+        ;
+
+        
+    
+    
+            marker_2cde12feda68d4dd63447660b1e7bb72.bindTooltip(
+                `<div>
+                     CCAFS LC-40 | Flight 28 | class 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2cde12feda68d4dd63447660b1e7bb72.setIcon(div_icon_f88e4095f9a80d921c1eb2fe7ec3130f);
+            
+    
+            marker_cluster_267b6d134efb8fff207464f38ebb771e.addTo(map_bd2b855dbde7bd11cdafd3c85c1a6d4b);
+        
+</script>
+</html>

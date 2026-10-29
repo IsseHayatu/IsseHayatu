@@ -1,0 +1,23 @@
+{
+  "url": "https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches",
+  "http_status": 200,
+  "retrieval_date": "2026-10-29",
+  "title": "List of Falcon 9 and Falcon Heavy launches - Wikipedia",
+  "html_tables": 19,
+  "completed_launch_tables": 2,
+  "parsed_rows": 285,
+  "columns": [
+    "Flight No.",
+    "Date and time (UTC)",
+    "Version, booster",
+    "Launch site",
+    "Payload",
+    "Payload mass",
+    "Orbit",
+    "Customer",
+    "Launch outcome",
+    "Booster landing"
+  ],
+  "historical_revision_http_status": 403,
+  "scope_note": "Current page completed launch tables (2025-2026), independent workflow demonstration. Not substituted into the 2010-2020 modeling cohort."
+}

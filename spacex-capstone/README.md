@@ -29,7 +29,7 @@ Run the notebook from this project folder. The Dash app opens at http://127.0.0.
 
 Labels follow the course convention and include successful ocean outcomes. They do not prove recovery, future reuse, or launch costs. ReusedCount and booster metadata can reflect information accumulated after the event. The tiny random test split is not evidence of future operational performance.
 
-The historical Wikipedia revision returned HTTP 403 during preparation. collect_data.py includes the parsing workflow and records failures explicitly. No fresh historical scrape is claimed. Independent supplied lab snapshots support the remaining analyses.
+The historical Wikipedia revision returned HTTP 403. The current launch-list page was successfully retrieved on 29 October 2026 and parsed into 285 distinct dated records (2025-2026), demonstrating the complete scraping workflow. These records are not merged into the historical modeling cohort. See 02_Web_Scraping.ipynb and evidence/scraping_evidence.json. Independent supplied lab snapshots support the historical analyses.
 
 Proximity map points are manually selected illustrative references, not surveyed or verified nearest roads, railways, or coastline points. Distances are haversine straight-line distances.
 
@@ -45,14 +45,11 @@ Proximity map points are manually selected illustrative references, not surveyed
 
 Data source: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/
 
-## Individual lab notebooks
+## Evidence added after report review
 
-- [Data Collection API](01_Data_Collection_API.ipynb)
-- [Web Scraping](02_Web_Scraping.ipynb)
-- [Data Wrangling](03_Data_Wrangling.ipynb)
-- [EDA Visualization](04_EDA_Visualization.ipynb)
-- [EDA SQL](05_EDA_SQL.ipynb)
-- [Folium Map](06_Folium_Map.ipynb)
-- [Predictive Analysis](07_Predictive_Analysis.ipynb)
-
-All notebook code cells have been executed. The scraping notebook documents the historical endpoint block explicitly.
+- 01_Data_Collection_API.ipynb verifies the 107 -> 95 -> 94 -> 90 filter counts.
+- 02_Web_Scraping.ipynb executes the BeautifulSoup workflow and displays current-page output.
+- folium_site_records.py and 06_Folium_Map.ipynb render all 56 records in four site maps; saved HTML views are in evidence/.
+- evidence/test_prediction_audit.csv lists every held-out prediction. All four models use 18 test records (6 Class 0, 12 Class 1). Training contains 72 records (24 Class 0, 48 Class 1).
+- SVM false positives are flights 75, 14 and 12; TN=3, FP=3, FN=0, TP=12.
+- The SQL notebook includes every required query and output, using its separate 101-record snapshot.
