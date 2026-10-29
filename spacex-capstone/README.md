@@ -44,3 +44,15 @@ Proximity map points are manually selected illustrative references, not surveyed
 - data/: original course CSV snapshots.
 
 Data source: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/
+
+## Individual lab notebooks
+
+- [Data Collection API](01_Data_Collection_API.ipynb)
+- [Web Scraping](02_Web_Scraping.ipynb)
+- [Data Wrangling](03_Data_Wrangling.ipynb)
+- [EDA Visualization](04_EDA_Visualization.ipynb)
+- [EDA SQL](05_EDA_SQL.ipynb)
+- [Folium Map](06_Folium_Map.ipynb)
+- [Predictive Analysis](07_Predictive_Analysis.ipynb)
+
+All notebook code cells have been executed. The scraping notebook documents the historical endpoint block explicitly.
